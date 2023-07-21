@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const DevicesSchema = new Schema(
   {
-    serialNum:{
+    serial:{
         type: String,
         required: true
     },
@@ -59,16 +59,16 @@ const DevicesSchema = new Schema(
         },
     },
     
-    datePurchased: {
+    purchaseDate: {
         type: Date,
         default: Date.now,
-        get: function (dateListed) {
+        get: function (purchaseDate) {
         const options = {
             day: '2-digit',
             month: '2-digit',
             year: 'numeric',
         };
-        return dateListed.toLocaleDateString('en-GB', options);
+        return purchaseDate.toLocaleDateString('en-GB', options);
         },
     },
 

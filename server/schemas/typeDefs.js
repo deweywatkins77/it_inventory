@@ -6,7 +6,7 @@ scalar Date
 
 type Device{
     _id: ID!
-    serialNum: String
+    serial: String
     model: String
     manufacturer: String
     gtInventory: String
