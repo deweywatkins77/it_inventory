@@ -13,7 +13,8 @@ const DevicesSchema = new Schema(
     },
 
     manufacturer:{
-        type: String
+        type: String,
+        required: true
     },
 
     gtInventory:{
