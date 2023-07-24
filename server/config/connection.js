@@ -1,6 +1,6 @@
 require('dotenv').config();
 const { connect, connection } = require('mongoose');
-connectionString = process.env.MONGO_URI;
+const connectionString = process.env.MONGO_URI;
 
 connect(connectionString,{
     useNewUrlParser: true,

@@ -28,7 +28,7 @@ type Device{
 }
 
 type Query{
-    getDeviceById(_id:ID!): Device
+    getDevices(_id:ID): [Device]
 }
 `;
 module.exports = typeDefs

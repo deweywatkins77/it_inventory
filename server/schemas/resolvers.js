@@ -2,18 +2,24 @@ const { Devices, Templates } = require('../models');
 
 const resolvers = {
     Date: {
-        resolve: (date) => {
+        Date: (date) => {
             const formattedDate = date.toLocaleDateString("en-GB");
             return formattedDate;
         },
     },
 
     Query: {
-        getDeviceById: async (ID)=>{
+        getDevices: async (_, {_id})=>{
             try{
-                return await Devices.find({_id:ID})
+                if (_id){
+                    const device = await Devices.findOne({_id}) || null
+                    return device ? [device] : [];
+                }else{
+                    return await Devices.find()
+                }
             }catch(err){
-                return err
+                console.error(err);
+                return null;
             }
 
         }
