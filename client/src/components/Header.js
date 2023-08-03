@@ -1,9 +1,9 @@
-import headerImg from '../images/header.jpg'
+import Navigation from './Navigation'
 
 const Header = () =>{
     return (
         <header>
-            <img src={headerImg} alt="warehouse inventory" />
+            <Navigation />
         </header>
     )
 }

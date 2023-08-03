@@ -1,5 +1,5 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import { ApolloClient, ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
 import './index.css'
 import Header from './components/Header'
 import Home from './pages/Home'
@@ -14,9 +14,11 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </main>
       </Router>
     </ApolloProvider>
   );
