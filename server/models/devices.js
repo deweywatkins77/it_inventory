@@ -51,11 +51,11 @@ const DevicesSchema = new Schema(
         default: Date.now,
         get: function (dateListed) {
           const options = {
-            day: '2-digit',
             month: '2-digit',
+            day: '2-digit',
             year: 'numeric',
           };
-          return dateListed.toLocaleDateString('en-GB', options);
+          return dateListed.toLocaleDateString('en', options);
         },
     },
     
@@ -68,7 +68,7 @@ const DevicesSchema = new Schema(
             month: '2-digit',
             year: 'numeric',
         };
-        return purchaseDate.toLocaleDateString('en-GB', options);
+        return purchaseDate.toLocaleDateString('en', options);
         },
     },
 
