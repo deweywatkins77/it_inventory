@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client';
 
-export const getDevices = gql`
-query getDevices($id: ID) {
-    getDevices(_id: $id){
+export const updateDevice = gql`
+mutation updateDevice($id: ID, $data: newDeviceData) {
+    updateDevice(_id: $id, data:$data){
       _id
       Serial
       GTInventory

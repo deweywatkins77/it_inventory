@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom"
 const Navigation = () =>{
     return (
         <nav>
             <ul>
-                <li>Home</li>
-                <li>Templates</li>
-                <li>Add Item</li>
-                <li>Delete Items</li>
+                <Link to={"/"}><li>Home</li></Link>
+                {/* <li>Templates</li> */}
+                <Link to={"/AddDevice"}
+                ><li>Add Device</li></Link>
+                {/* <li>Delete Items</li> */}
             </ul>
         </nav>
     )

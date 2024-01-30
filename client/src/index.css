@@ -3,20 +3,22 @@ body {
 }
 
 header {
-  background-image: url('./images/header.jpg');
-  height: 150px;
+  height: 75px;
+  margin-top: auto;
+  margin-bottom: auto;
   width: 100%;
   padding: 0px;
   margin: 0px;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
 }
 
 nav ul {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin: 0px;
   padding: 0px;
 }
@@ -26,7 +28,7 @@ nav li {
   font-size: 22px;
   margin-right: 15px;
   padding: 2px;
-  background-color: aquamarine;
+  background-color: rgb(140, 176, 255);
   border-radius: 10px;
 }
 
@@ -48,4 +50,37 @@ nav li {
   font-size: 18;
   display: flex;
   flex-direction: row;
+}
+
+.deviceForm {
+  display: flex;
+  flex-wrap: wrap;  /* Allow items to wrap to the next row */
+  max-width: 600px; /* Set a maximum width to limit the width of the form */
+  margin: auto;
+}
+
+.deviceForm > div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px; /* Adjust the margin between label-input pairs */
+}
+
+.deviceForm label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-right: 15px;
+}
+
+.deviceForm input {
+  padding: 8px;
+  margin-bottom: 16px;
+  margin-left: 15px
+}
+
+.deviceForm button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
 }

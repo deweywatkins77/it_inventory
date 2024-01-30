@@ -2,26 +2,26 @@ const { Schema, model } = require('mongoose');
 
 const DevicesSchema = new Schema(
   {
-    Serial:{
+    serial:{
         type: String,
         required: true
     },
 
-    Model:{
+    model:{
         type: String,
         required: true
     },
 
-    Manufacturer:{
+    manufacturer:{
         type: String,
         required: true
     },
 
-    GTInventory:{
+    gtInventory:{
         type:String
     },
 
-    OS:{
+    os:{
         type: String
     },
 
@@ -29,24 +29,24 @@ const DevicesSchema = new Schema(
         type: Number
     },
 
-    IccId:{
+    iccId:{
         type: Number
     },
 
-    PhoneNum:{
+    phoneNum:{
         type: Number
     },
 
-    MAC:{
+    mac:{
         type: String
     },
 
-    Status:{
+    status:{
         type: String,
         required: true
     },
 
-    Warranty: {
+    warranty: {
         type: Date,
         default: Date.now,
         get: function (dateListed) {
@@ -59,7 +59,7 @@ const DevicesSchema = new Schema(
         },
     },
     
-    PurchaseDate: {
+    purchaseDate: {
         type: Date,
         default: Date.now,
         get: function (purchaseDate) {
@@ -72,31 +72,31 @@ const DevicesSchema = new Schema(
         },
     },
 
-    Hostname:{
+    hostname:{
         type: String
     },
 
-    IP:{
+    ip:{
         type: String
     },
 
-    Owner:{
+    owner:{
         type: String
     },
 
-    Location:{
+    location:{
         type: String
     },
     
-    Room:{
+    room:{
         type: String
     },
 
-    TermId:{
+    termId:{
         type: String
     },
 
-    Notes:{
+    notes:{
         type: String
     }
   },
@@ -104,7 +104,6 @@ const DevicesSchema = new Schema(
     toJSON: {
       getters: true,
     },
-    id: false,
     versionKey: false,
   } 
 )

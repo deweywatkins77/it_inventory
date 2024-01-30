@@ -21,7 +21,25 @@ const resolvers = {
                 console.error(err);
                 return null;
             }
+        }
+    },
 
+    Mutation: {
+        updateDevice: async (_,{_id, data})=>{
+            try{
+                const updatedDevice = await Devices.findOneAndUpdate(
+                    {_id},
+                    {$set: data},
+                    {new:true}
+                )
+                if (!updatedDevice) {
+                    throw new Error('Device not found');
+                  }
+          
+                  return updatedDevice;
+            } catch (error) {
+                throw new Error(`Error updating device: ${error.message}`);
+            }
         }
     }
 }

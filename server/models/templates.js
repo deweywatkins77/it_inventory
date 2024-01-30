@@ -2,19 +2,20 @@ const { Schema, model } = require('mongoose');
 
 const TemplatesSchema = new Schema(
     {
-        model:{
+        
+        Model:{
             type: String
         },
 
-        manufacturer:{
+        Manufacturer:{
             type: String
         },
 
-        serialNum:{
+        SerialNum:{
             type: String
         },
 
-        datePurchased: {
+        DatePurchased: {
             type: Date,
             default: Date.now,
             get: function (dateListed) {
