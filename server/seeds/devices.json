@@ -10,7 +10,7 @@
 	"Room" : "Unit 1182 ",
 	"TermId" : "GTPX45 ",
 	"PurchaseDate" : "1/1/1970",
-	"Status" : "storage"
+	"InventoryStatus" : "storage"
 },
 {
 	"Hostname" : "GTPD-CF20-1217",
@@ -25,7 +25,7 @@
 	"Room" : "Unit 1217 ",
 	"TermId" : "GTPX48 ",
 	"PurchaseDate" : "1/1/1970",
-	"Status" : "storage"
+	"InventoryStatus" : "storage"
 },
 {
 	"Hostname" : "GTPD-PATROL-CAP",
@@ -40,7 +40,7 @@
 	"Room" : "256 ",
 	"TermId" : "SSTEST02 ",
 	"PurchaseDate" : "3/23/2019",
-	"Status" : "storage"
+	"InventoryStatus" : "storage"
 },
 {
 	"Hostname" : "GTPD-LAT54-225",
@@ -54,7 +54,7 @@
 	"Room" : "Unit 225 ",
 	"TermId" : "GTPX29 ",
 	"PurchaseDate" : "3/24/2019",
-	"Status" : "storage"
+	"InventoryStatus" : "storage"
 },
 {
 	"Hostname" : "GTPD-LAT541-102",
@@ -68,7 +68,7 @@
 	"Room" : "Unit 1024 ",
 	"TermId" : "GTPX33 ",
 	"PurchaseDate" : "3/24/2019",
-	"Status" : "storage"
+	"InventoryStatus" : "storage"
 },
 {
 	"Hostname" : "GTPD-LAT54-902",
@@ -82,7 +82,7 @@
 	"Room" : "Unit 902 ",
 	"TermId" : "GTPX35 ",
 	"PurchaseDate" : "3/24/2019",
-	"Status" : "storage"
+	"InventoryStatus" : "storage"
 },
 {
 	"Hostname" : "GTPD-LAT541-742",
@@ -96,7 +96,7 @@
 	"Room" : "Unit 742 ",
 	"TermId" : "GTPX38 ",
 	"PurchaseDate" : "3/24/2019",
-	"Status" : "storage"
+	"InventoryStatus" : "storage"
 },
 {
 	"Hostname" : "GTPD-LAT541-845",
@@ -110,7 +110,7 @@
 	"Room" : "Unit 1267 ",
 	"TermId" : "GTPX41 ",
 	"PurchaseDate" : "3/24/2019",
-	"Status" : "storage"
+	"InventoryStatus" : "storage"
 },
 {
 	"Hostname" : "GTPD-5414-1194",
@@ -125,7 +125,7 @@
 	"Room" : "Unit 1194 ",
 	"TermId" : "GTPX47 ",
 	"PurchaseDate" : "3/24/2019",
-	"Status" : "storage"
+	"InventoryStatus" : "storage"
 },
 {
 	"Hostname" : "GTPD-LAT541-121",
@@ -139,7 +139,7 @@
 	"Room" : "Unit 1218 ",
 	"TermId" : "GTPX49 ",
 	"PurchaseDate" : "3/24/2019",
-	"Status" : "storage"
+	"InventoryStatus" : "storage"
 },
 {
 	"Hostname" : "GTPD-LAT541-786",
@@ -153,6 +153,6 @@
 	"Room" : "Unit 786 ",
 	"TermId" : "GTPX67",
     "PurchaseDate" : "3/24/2019",
-    "Status" : "storage"
+    "InventoryStatus" : "storage"
 }
 ]

@@ -1,0 +1,19 @@
+/* .recordsContainer {
+  margin-top: 10px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.columnHeaders {
+  font-size: 24;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+
+.recordsRow {
+  font-size: 18;
+  display: flex;
+  flex-direction: row;
+}

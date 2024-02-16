@@ -12,6 +12,10 @@ const DevicesSchema = new Schema(
         required: true
     },
 
+    DeviceType:{
+        type: String
+    },
+
     Manufacturer:{
         type: String,
         required: true
@@ -26,22 +30,22 @@ const DevicesSchema = new Schema(
     },
 
     imei:{
-        type: Number
+        type: String
     },
 
     IccId:{
-        type: Number
+        type: String
     },
 
     PhoneNum:{
-        type: Number
+        type: String
     },
 
     MAC:{
         type: String
     },
 
-    Status:{
+    InventoryStatus:{
         type: String,
         required: true
     },
@@ -50,12 +54,15 @@ const DevicesSchema = new Schema(
         type: Date,
         default: Date.now,
         get: function (dateListed) {
-          const options = {
-            month: '2-digit',
-            day: '2-digit',
-            year: 'numeric',
-          };
-          return dateListed.toLocaleDateString('en', options);
+        //   const options = {
+        //     month: '2-digit',
+        //     day: '2-digit',
+        //     year: 'numeric',
+        //   };
+        //   console.log(dateListed.toLocaleDateString('en', options))
+        //   console.log(dateListed.toISOString().split('T')[0])
+        formattedDate = dateListed.toISOString().split('T')[0]
+          return formattedDate;
         },
     },
     
@@ -63,12 +70,14 @@ const DevicesSchema = new Schema(
         type: Date,
         default: Date.now,
         get: function (purchaseDate) {
-        const options = {
-            day: '2-digit',
-            month: '2-digit',
-            year: 'numeric',
-        };
-        return purchaseDate.toLocaleDateString('en', options);
+        // const options = {
+        //     day: '2-digit',
+        //     month: '2-digit',
+        //     year: 'numeric',
+        // };
+        // return purchaseDate.toLocaleDateString('en', options);
+        formattedDate = purchaseDate.toISOString().split('T')[0]
+          return formattedDate;
         },
     },
 
@@ -98,6 +107,10 @@ const DevicesSchema = new Schema(
 
     Notes:{
         type: String
+    },
+
+    QRCode:{
+        type: Boolean
     }
   },
   {

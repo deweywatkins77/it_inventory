@@ -1,0 +1,57 @@
+.qrSheet {
+    width: 8.5in;
+    height: 11in;
+    margin: auto;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-around !important;
+    flex-wrap: wrap;
+}
+
+
+.labelDiv {
+    width: 2in; 
+    height: 1.5in;
+    border: black 2px solid;
+}
+
+.labelDiv .hostLabel {
+    width: 1in;
+    float: right;
+    margin: 0px 5px 0px 0px;
+    word-break: normal;
+}
+
+.labelDiv .serialLabel {
+    float:left;
+    margin: 0px 0px 0px 5px;
+    word-break: break-all;
+}
+
+.labelUsed {
+    margin:auto;
+    margin-top: .65in;
+    color: Red;
+    text-align: center;
+}
+
+.buttonContainer {
+    width: 8.5in;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width:215px;
+    margin: auto;    
+    display: inline;
+}
+
+
+@media print {
+    .labelUsed, header{
+        display: none;
+    }
+}

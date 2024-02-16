@@ -1,0 +1,153 @@
+.deviceForm {
+  display: flex;
+  flex-wrap: wrap;  
+  max-width: 600px;
+  margin: auto;
+  padding-right: 7px;
+  background-color: lightgrey;
+  padding-top: 10px;
+  border-radius: 10px;
+}
+
+.deviceForm > div {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.deviceForm label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  width: 30%;
+  word-wrap: none;
+}
+
+.requiredAst {
+  color:red;
+  font-size: 16px;
+}
+
+.deviceForm input {
+  padding: 8px;
+  margin-bottom: 16px;
+  width: 90%;
+}
+
+.deviceForm .dropDown {
+  width: 100%;
+  height: 37px;
+  margin-bottom: 16px;;
+}
+
+.deviceForm .dateField {
+  width: 90%;
+  height: 17.5px;
+}
+
+.deviceForm .textAreaLabel {
+  width: 100%;
+}
+
+.deviceForm .notesInput {
+  margin-top: 5px;
+  width: 98%;
+}
+
+.submitContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.formSubmitButton {
+  width: auto !important;
+  margin-bottom: 0px !important;
+  padding: 8px;
+  border-radius: 7px;
+  background-image: linear-gradient(lightgreen, rgb(2, 154, 2));
+}
+
+.deviceForm button {
+  width: auto;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 8px;
+  border-radius: 7px;
+}
+
+.deviceForm .QRButton {
+  background-image: linear-gradient(lightgreen, rgb(2, 154, 2));
+}
+
+.deviceForm .surplusButton {
+  background-image: linear-gradient(rgb(255, 0, 0), rgb(205, 0, 0));
+}
+
+@media screen and (max-width: 603px) { 
+  .deviceForm {
+    display: flex;
+    flex-wrap: wrap;  
+    max-width: 405px;
+    margin: auto;
+    padding-right: 7px;
+  }
+
+  .requiredAst {
+    display: none;
+  }
+
+  .requiredeLabel {
+    color:red !important;
+  }
+
+  .deviceForm button, .formSubmitButton {
+    width: auto !important;
+    margin: auto !important;
+    padding: 7px 7px !important;
+    border-radius: 7px;
+  }
+}
+
+@media screen and (max-width: 426px) { 
+  .deviceForm {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 250px;
+    padding: 10px 15px 0px 5px;
+    margin: auto;
+  }
+
+  .deviceForm label{
+    margin: 0px;
+    padding: 0px;
+    width: 45%;
+    font-size: 10px;
+  }
+
+  .deviceForm .dropDown {
+    width: 108%;
+    height: 32px;
+    margin-bottom: 16px;;
+  }
+
+  .submitContainer {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formSubmitButton {
+    width: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 7px 0px;
+    border-radius: 7px;
+  }
+
+  .deviceForm button, .formSubmitButton {
+    width: 90% !important;
+    margin: auto !important;
+    padding: 7px 0px !important;
+    border-radius: 7px;
+  }
+}

@@ -1,8 +1,8 @@
-import RecordsList from "../components/RecordsList";
+import InventoryList from "../components/InventoryList";
 
 const Home = () =>{
     return (
-        <RecordsList />
+        <InventoryList />
     )
 }
 export default Home

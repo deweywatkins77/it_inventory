@@ -1,0 +1,51 @@
+.massUpdateContainer {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items: center;
+    margin: 0px 0px 0px 10px;
+    padding-bottom: 15px;
+}
+
+.massUpdateP {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 15px 0px 0px 0px
+}
+
+.massUpdateSelect {
+    margin: 15px 0px 0px 15px;
+}
+
+.massUpdateButton {
+    width: 70px;
+    margin: 15px 0px 0px 15px;
+}
+
+@media screen and (max-width: 430px) { 
+    .massUpdateContainer{
+        width: 45%;
+        height: 90px;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .massUpdateP {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0px 0px 0px 0px
+    }
+    
+    .massUpdateSelect {
+        margin: 0px 0px 0px 0px;
+    }
+    
+    .massUpdateButton {
+        width: 70px;
+        margin: 0px 0px 0px 0px;
+    }
+}

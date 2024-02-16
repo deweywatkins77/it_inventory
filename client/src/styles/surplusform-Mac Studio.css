@@ -1,0 +1,176 @@
+
+h1, h3 {
+    text-align: center;
+  }
+  
+  .formHeader {
+    width: 1200px;
+    height: 175px;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .fromSection {
+    width: 550px;
+  }
+  
+  .fromSection p {
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+  
+  .toSection {
+    width: 350px;
+  }
+  
+  .toSection p {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  
+  .textRight {
+    float: right;
+    text-align: right;
+    margin: 0px 0px 0px 20px;
+  }
+  
+   .textLeft {
+    float: left;
+    text-align: left;
+    margin-right: 15px;
+    padding-bottom: 100%;
+  }
+  
+  .tableHeader {
+    width: 1200px;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content:center;
+    
+  }
+  
+  .tableHeader h4 {
+    margin:0px;
+    margin-top: 20px;
+    border-top: black 2px solid;
+    border-bottom: black 1px solid;
+  }
+  
+  .tableHeader .genProp {
+    width: 67.4%;
+    margin-bottom:0px;
+    border-right: black 2px solid;
+    border-left: black 2px solid;
+  }
+  
+  .tableHeader .loc {
+    padding-left: 5px;
+    margin-bottom:0px;
+    width: 21.9%;
+    text-align: center;
+ }
+  
+  .tableHeader .cond {
+    padding-left: 5px;
+    margin-bottom:0px;
+    width:10.7%;
+    text-align: center;
+    border-right: black 2px solid;
+    border-left: black 2px solid;
+  }
+  
+  .formTable {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content:left;
+    border-spacing: 0px;
+  }
+  
+  .formTable tbody {
+    margin:0px;
+    width: 100%
+  }
+  
+  .formTable .quantity {
+    margin: 0px;
+    padding: 0px;
+    width: 10%;
+    border: black 1px solid;
+  }
+  
+  .formTable .desc {
+    width: 30%;
+    border: black 1px solid;
+  }
+  
+  .formTable .model {
+    width: 10%;
+    border: black 1px solid;
+  }
+  
+  .formTable .serial {
+    width: 10%;
+    border: black 1px solid;
+  }
+  
+  .formTable .bldg {
+    width: 10%;
+    border: black 1px solid;
+  }
+  
+  .formTable .room {
+    width:10%;
+    border: black 1px solid;
+  }
+  
+  .formTable .cond {
+    width:10%;
+    border: black 1px solid;
+  }
+
+  .item td {
+    border: black 1px solid;
+    padding-left: 10px;
+    word-break: break-all;
+    overflow-wrap: break-word !important;
+  }
+
+  .formFooter {
+    width: 1200px;
+    height: 150px;;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    justify-content:space-between;
+  }
+
+  .signContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    float: left;
+    padding-right: 10px;
+  }
+
+  .pickupContainer {
+    width: 100%;
+    height: 75px;
+    float: right;;
+  }
+
+  .witnessContainer {
+    width: 100%;
+    height: 75px;
+  }
+
+  @media print {
+    header {
+        display: none;
+    }
+}
