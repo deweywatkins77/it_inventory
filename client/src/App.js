@@ -13,7 +13,7 @@ import SurplusForm from './pages/SurplusForm'
 import QRCodes from './pages/QRCodes';
 
 const client = new ApolloClient({
-  uri: 'http://localhost:3001/graphql',
+  uri: 'https://inventory-it-ed38a4d87743.herokuapp.com/graphql',
   cache: new InMemoryCache(),
 });
 
