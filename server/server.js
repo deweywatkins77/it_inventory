@@ -3,7 +3,7 @@ const {ApolloServer} = require('apollo-server-express');
 const path = require('path');
 const{typeDefs,resolvers}=require('./schemas');
 const db= require('./config/connection');
-const PORT= 3001;
+const Port = process.env.PORT || 3000;
 const app=express();
 
 const server=new ApolloServer({
